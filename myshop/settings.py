@@ -19,8 +19,7 @@ from oscar import OSCAR_MAIN_TEMPLATE_DIR, get_core_apps
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-location = lambda x: os.path.join(
-    os.path.dirname(os.path.realpath(__file__)), x)
+location = lambda x: os.path.join(BASE_DIR, x)
 
 
 # Quick-start development settings - unsuitable for production
@@ -150,6 +149,11 @@ STATIC_ROOT = location('public/static')
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = location("public/media")
+
+# STATICFILES_DIRS = [
+    # location('public/static'),
+    # location("public/media"),
+# ]
 
 SITE_ID = 1
 

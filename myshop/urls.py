@@ -26,3 +26,11 @@ urlpatterns = [
 
     url(r'', include(application.urls)),
 ]
+
+
+# Serving media files when development
+from django.conf import settings
+from django.conf.urls.static import static
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
