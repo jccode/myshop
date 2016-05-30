@@ -150,10 +150,9 @@ MEDIA_URL = '/media/'
 
 MEDIA_ROOT = location("public/media")
 
-# STATICFILES_DIRS = [
-    # location('public/static'),
-    # location("public/media"),
-# ]
+STATICFILES_DIRS = [
+    location('static'),
+]
 
 SITE_ID = 1
 
