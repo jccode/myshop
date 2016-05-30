@@ -177,3 +177,8 @@ OSCAR_ORDER_STATUS_PIPELINE = {
     'Being processed': ('Processed', 'Cancelled',),
     'Cancelled': (),
 }
+
+OSCAR_DEFAULT_CURRENCY = 'CNY'
+
+OSCAR_SHOP_NAME = 'GuangHua'
+
